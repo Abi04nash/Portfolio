@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(10, 10, 56);
+            color: whitesmoke;
+            font-family: 'Poppins',sans-serif;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            width: 100%;
+            background-color: rgb(2, 2, 23);
+        }
+
+        nav ul{
+            display: flex;
+            justify-content: centre;
+            
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 18px;
+        }
+
+        nav ul li a{
+            list-style: none;
+            color: rgb(155, 155, 241);
+            
+        }
+        nav ul li a:hover{
+            list-style: none;
+            color: whitesmoke;
+            
+        }
+
+        main hr{
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+
+        .left{
+            font-size: 2.8rem;
+            margin-left: 40px;
+            color: rgb(136, 255, 127);
+        }
+
+        .firstsection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0px;
+
+        }
+
+        .firstsection > div{
+            width: 35%;
+        }
+
+        .leftsection{
+            /* background-color: black; */
+            font-size: 2.5rem;
+            margin: 25px 0px;
+
+        }
+        .rightsection img{
+            
+            width: 90%;
+            
+        }
+
+        .purple{
+            color: blueviolet;
+
+        }
+
+        /* .secondsection{
+            max-width: 80vw;
+            margin: auto;
+        } */
+        .about{
+            font-size: 3rem;
+            margin:0px 90px;
+            color: purple;
+        }
+
+
+        .secondsection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 30px 0px;
+        }
+
+        .secondsection > div{
+            width: 35%;
+        }
+        .leftsection2 img{
+            width: 70%;
+        }
+        .para{
+            font-size: 1.2rem;
+            color: #9c97f1;
+        }
+
+        .thirdsection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 30px 0px;
+        }
+        .avisection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 30px 0px;
+        }
+
+
+
+        
+
+        /* .thirdsection > div{
+            width: 35%;
+        } */
+
+        .section1{
+            height: 250px;
+            width: 215px;
+            /* background-color: #9c97f1; */
+            border-radius: 2rem;
+        }
+        .section1{
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .section1:hover{
+            transform:
+            scale(1.1);
+            /* background-color: #9c97f1;
+            border-radius: 2rem; */
+            
+        }
+        .section2{
+            height: 250px;
+            width: 215px;
+            /* background-color: #9c97f1; */
+            border-radius: 2rem;
+        }
+        .section2{
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .section2:hover{
+            transform:
+            scale(1.1);
+            /* background-color: #9c97f1;
+            border-radius: 2rem; */
+            
+        }
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        .h{
+            height: 70%;
+            width: 100%;
+            border-radius: 1rem;
+            
+        }
+
+        .t{
+            height: 80%;
+            width: 100%;
+            border-radius: 1rem;
+            
+        }
+        .lc{
+            height: 80%;
+            width: 100%;
+            border-radius: 1rem;
+            
+        }
+        
+        .hh{
+            height: 60%;
+            width: 100%;
+            border-radius: 25rem;
+            
+        }
+
+        .pa{
+            color: #9c97f1;
+            margin: 0 30px;
+            font-size: 20px;
+        }
+        .p{
+            color: #9c97f1;
+            font-size: 16px;
+        }
+        .b{
+            color: #9c97f1;
+            margin: 0 100px;
+            font-size: 20px;
+        }
+        .bb{
+            color: #9c97f1;
+            margin: 0 100px;
+            font-size: 20px;
+        }
+        .x{
+            color: #b6a2ba;
+            font-size: 28px;
+            font-style: italic;
+
+        }
+        .xx{
+            color: #b6a2ba;
+            font-size: 28px;
+            margin: 0 30px;
+            font-style: italic;
+
+        }
+        .xxx{
+            color: #b6a2ba;
+            font-size: 28px;
+            margin: 0 30px;
+            font-style: italic;
+
+        }
+        #foot{
+            width: 100%;
+            height: 100px;
+            background-color: rgb(4, 4, 41);
+        }
+
+        html {
+            scroll-behavior: smooth; /* Enables smooth scrolling */
+        }
+
+
+
+
+        /* For devices smaller than 768px (mobile) */
+
+@media (max-width: 768px) {
+    /* Add your styles for mobile devices here */
+    /* body {
+      background-color: burlywood;
+    } */
+
+    nav{
+        height: 80px;
+        justify-content: space-between;
+    }
+
+    .left{
+        font-size: 1.2rem;
+        margin-left: 10px;
+    }
+
+    .right {
+        width: 100%;
+        margin-left: 30px;
+        
+    }
+   
+
+    nav ul li{
+        margin: 0px 8px;
+    
+    }
+
+    nav ul li a {
+        font-size: 9px; /* Smaller font size for mobile */
+        padding: 0px;
+        margin: 0px 0px;
+    }
+
+    .firstsection{
+        
+        margin: 95px 0px;
+        width: 100%;
+
+    }
+    .leftsection{
+        font-size: 1.8rem;
+    }
+    .rightsection img{
+        height: 220px;
+        width: 200px;
+        margin-right: 200px;
+    }
+
+
+    main hr{
+        border: 0;
+        background: #9c97f1;
+        height: 2px;
+        margin: 20px 20px;
+    }
+
+    .about{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .leftsection2 img{
+        height: 250px;
+        width: 180px;
+    }
+    .para{
+        font-size: 0.6rem;
+    }
+
+    .thirdsection{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction: column;
+        margin: 0px 0px;
+        /* height: 400px; */
+    }
+    .section1{
+        height:130px;
+        width: 100%;
+        /* background-color: #9c97f1; */
+        border-radius: 2rem;
+        display:flex;
+        justify-content:space-around;
+        align-items:center;
+    }
+    .h{
+        height: 100%;
+        width: 40%;
+    }
+    .hh{
+        height: 80%;
+        width: 40%;
+    }
+    .pa{
+        font-size: 0.8rem;
+    }
+
+    
+    .xx{
+        font-size: 0.8rem;
+    }
+    .x{
+        font-size: 1rem;
+    }
+    .p{
+        font-size: 0.8rem;
+    }
+
+    .avisection{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction: column;
+        
+        margin: 20px 0px;
+        /* height: 400px; */
+    }
+    .section2{
+        height:100px;
+        width: 35%;
+        /* background-color: #9c97f1; */
+        border-radius: 2rem;
+        /* display:flex;
+        justify-content:space-around;
+        align-items:center; */
+    }
+    .t{
+        height: 80%;
+        width: 100%;
+    }
+    .lc{
+        height: 80%;
+        width: 100%;
+    }
+    .xxx{
+        font-size: 1rem;
+    }
+    .ax{
+        /* background-color: #9c97f1; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2rem;
+        border-color: #9c97f1;
+        border-width: 200px;
+    }
+
+    .lastsection{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .b{
+        font-size: 1rem;
+    }
+    .bb{
+        font-size: 1rem;
+        margin-right: 210px;
+    }
+    
+
+
+    
+}
+
+
+
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left" id="zq">Avi's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#zq">Home</a></li>
+                    <li><a href="#ab">About</a></li>
+                    <li><a href="#sk">Skills</a></li>
+                    <li><a href="#mm">Profiles</a></li>
+                    <li><a href="#my">Squad</a></li>
+                    <li><a href="#cn">Connect</a></li>
+                </ul>
+            </div>
+
+            
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi ,I'm <span class="purple">Abinash</span> 
+                <div>And I'm a passionate</div>
+                <!-- <span class="purple">Web Developer</span></div> -->
+                <span id="element" class="purple"></span>
+            </div>
+            <div class="rightsection">
+                <img src="https://cdni.iconscout.com/illustration/premium/thumb/full-stack-developer-illustration-download-in-svg-png-gif-file-formats--binary-coding-design-digital-modern-technology-pack-development-illustrations-1651585.png?f=webp" alt="">
+            </div>
+        </section>
+
+
+        <br>
+        <br>
+
+        <hr>
+        <h1 class="about" id="ab">About Me</h1>
+        <section class="secondsection">
+            <div class="leftsection2">
+                <img src="https://cdn-icons-png.flaticon.com/512/5072/5072860.png" alt="">
+            </div>
+            <div class="rightsection2">
+                <div class="para">Hello! I'm Abinash Mishra , a passionate and driven student specializing in Information Technology.</div>
+                <br>
+                 <div class="para">I have immersed myself in the world of technology , developing a robust understanding of various IT concepts and practices.</div>
+                 <br>
+                <div class="para">I'm a Leetcode Enthusiast and I like to solve problems and create innovative solutions.</div>
+                <br>
+                <div class="para">I have a strong interest in web development and actively engage in building and maintaining web applications.</div></div>
+            
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <hr>
+        <h1 class="about" id="sk">Skills</h1>
+        <br>
+        <br>
+        <section class="thirdsection">
+            <div class="section1">
+                <img class="h" src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_640.png" alt="">
+                <br>
+                <br>
+                <br>
+                <p class="pa">Skill Rate :: 80%</p>
+                <p class="pa">Intermediate</p>
+            </div>
+            <br>
+            <div class="section1">
+                <img class="h" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="">
+                <br>
+                <br>
+                <br>
+                <p class="pa">Skill Rate :: 70%</p>
+                <p class="pa">Intermediate</p>
+                
+            </div>
+            <br>
+            <div class="section1">
+                <img class="h" src="https://pluralsight2.imgix.net/paths/images/nodejs-45adbe594d.png" alt="">
+                <br>
+                <br>
+                <br>
+                <p class="pa">Skill Rate :: 45%</p>
+                <p class="pa">Beginner</p>
+                
+            </div>
+            <br>
+            <div class="section1">
+                <img class="hh" src="https://pbs.twimg.com/profile_images/1730334391501488129/G0R0sjHH_400x400.jpg" alt="">
+                <br>
+                <br>
+                <br>
+                <br>
+                <p class="pa">Skill Rate :: 60%</p>
+                <p class="pa">Intermediate</p>
+                
+            </div>
+            
+        </section>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+       
+
+        <hr>
+        <h1 class="about"id="mm">My Profiles</h1>
+        <br>
+        <br>
+        <br>
+        <section class="avisection">
+            <div class="section2">
+                <div class="ax"><a href="https://leetcode.com/u/abinashmishra1401/"><img class="t" src="https://img.icons8.com/?size=160&id=fiCYSJOnXi7E&format=png" alt=""></a>
+                
+                    <!-- <br>
+                    <br>
+                    <br> -->
+                    <br>
+                    
+                    <p class="p"><span class="xxx">LeetCode</span></p>
+                </div>
+                
+                
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="section2">
+                <div class="ax"><a href="https://github.com/Abi04nash"><img class="t" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""></a>
+                    <!-- <br>
+                    <br>
+                    <br> -->
+                    <br>
+                    
+                    
+                    <p class="p"><span class="xxx">Github</span></p></div>
+                
+                
+                
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="section2">
+                <div class="ax"><a href="https://codeforces.com/profile/Avi1401"><img class="t" src="https://play-lh.googleusercontent.com/zaldniLc2XTBhNlCDR4hcD5bcRYHZ56_lO0yA2Qu-cADShy1_HDWrICSvv0EPTX79WY" alt=""></a>
+                
+                    <!-- <br>
+                    <br>
+                    <br> -->
+                    <br>
+                    
+                    <p class="p"><span class="xxx">CodeForces</span></p>
+                </div>
+                
+                
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="section2">
+                <div class="ax"><a href="https://www.codechef.com/users/abinash0404"><img class="t" src="https://play-lh.googleusercontent.com/S6jZCYEg6IITdHCCOd_1CnOBmzhoC_FL8oMyunTr64o9kxtV_CUYeTgx8epLS2lPmS8" alt=""></a>
+                    <!--                 
+                    <br>
+                    <br>
+                    <br> -->
+                    <br>
+                                    
+                <p class="p"><span class="xxx">CodeChef</span></p>
+                </div>
+                
+                
+            </div>
+            
+        </section>
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+
+
+
+
+        <hr>
+        <h1 class="about"id="my">My Squad</h1>
+        <br>
+        <br>
+        <br>
+        <section class="thirdsection">
+            <div class="section1">
+                <img class="h" src="https://media.licdn.com/dms/image/v2/D4D03AQEt-3aK_WJqiA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1725966565749?e=1733961600&v=beta&t=KrbHSOP22fvnnlNkC0HNVzCl6s9bfIlopos4k3TOV3Q" alt="">
+                <br>
+                <br>
+                <br>
+                <div><p class="p"><span class="x">JAGNESWAR</span></p>
+                    <br>
+                    <p class="p">ML Enthusiast</p>
+                    <p class="p">Competative programmer</p>
+                </div>
+                <!-- <p class="p"><span class="x">JAGNESWAR</span></p>
+                <br>
+                <p class="p">ML Enthusiast</p>
+                <p class="p">Competative programmer</p> -->
+            </div>
+            <br>
+            <br>
+            <div class="section1">
+                <img class="h" src="https://media.licdn.com/dms/image/v2/D5603AQEXfNL2Og0aCA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1722630148397?e=1733961600&v=beta&t=np18tgm33h0V0Pj1YHLW2YqtcSUbRfu3dk4HiY0zMRY" alt="">
+                <br>
+                <br>
+                <br>
+                <div><p class="p"><span class="x">AMAN</span></p>
+                    <br>
+                    
+                    <p class="p">Web developer</p>
+                    <p class="p">LeetCode Enthusiast</p>
+                    <p class="p">Competative Programmer</p>
+                </div>
+                
+            </div>
+            <br>
+            <br>
+            <div class="section1">
+                <img class="h" src="subro.png" alt="">
+                <br>
+                <br>
+                <br>
+                <div><p class="p"><span class="x">SUBRO</span></p>
+                    <br>
+                    <p class="p">Web developer</p>
+                    <p class="p">Competative Programmer</p>
+                </div>
+                
+            </div>
+            <br>
+            <br>
+            <div class="section1">
+                <img class="h" src="https://media.licdn.com/dms/image/v2/D5603AQEzupINgdQqvA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724742659161?e=1733961600&v=beta&t=3jzxov5411ESqnxYuUvaggatCUoOL5tN8g2h2hnJ8OI" alt="">
+                <br>
+                <br>
+                <br>
+                <div><p class="p"><span class="x">BISWABIN</span></p>
+                    <br>
+                   
+                    <p class="p">Programmer</p>
+                    <p class="p">Cyber security Enthusiast </p>
+                    <p class="p">Video Editor </p>
+                </div>
+                
+            </div>
+            
+        </section>
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+
+
+     
+       
+
+        <hr>
+        <h1 class="about"id="cn">Connect With Me</h1>
+        <br>
+        <br>
+        <br>
+        <section class="lastsection">
+            <p class="b"><span class="x">Mail</span>:: abinashmishra1401@gmail.com</p>
+            <br>
+            <p class="bb"><span class="x">Phone/WhatsApp</span> :: 7847097951</p>
+            <br>
+            <p class="b"><span class="x">LinkedIn</span>:: www.linkedin.com/in/abinash-mishra-880a5b291</p>
+            
+        </section>
+        <br>
+        <br>
+
+
+    </main>
+    <footer id="foot">
+
+    </footer>
+
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+      
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Programmer','Web Developer'],
+      typeSpeed: 50,
+    });
+  </script>
+
+
+</body>
+</body>
+
+</html>
