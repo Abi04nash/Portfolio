@@ -303,11 +303,22 @@
 
         /* For devices smaller than 768px (mobile) */
 
+
+
 @media (max-width: 768px) {
     /* Add your styles for mobile devices here */
     /* body {
       background-color: burlywood;
     } */
+    body {
+        background-color:beige;
+        color: black;
+        font-family: 'Poppins',sans-serif;
+        
+        height: 100%;
+        /* border: 0.2rem solid rgb(155, 156, 166); */
+        margin: 0;
+    }
 
     * {
         margin: 0;
@@ -315,6 +326,7 @@
     }
 
     nav{
+        background-color: purple;
         height: 80px;
         justify-content: space-between;
     }
@@ -326,6 +338,11 @@
         -webkit-background-clip: text;
         background-clip: text; 
         color: transparent;
+    }
+    nav ul li a{
+        list-style: none;
+        color: black;
+        
     }
 
     .right {
@@ -344,6 +361,10 @@
         font-size: 9px; /* Smaller font size for mobile */
         padding: 0px;
         margin: 0px 0px;
+    }
+
+    .about{
+        color: purple;
     }
 
     .firstsection{
@@ -378,10 +399,13 @@
         width: 180px;
     }
     .para{
+        color: black;
         font-size: 0.6rem;
     }
 
     .thirdsection{
+        
+        border-radius: 1rem;
         display:flex;
         justify-content:center;
         align-items:center;
@@ -423,9 +447,9 @@
 
     .avisection{
         display:flex;
+        flex-wrap: wrap;
         justify-content:center;
-        align-items:center;
-        flex-direction: column;
+        
         
         margin: 20px 0px;
         /* height: 400px; */
@@ -438,6 +462,12 @@
         /* display:flex;
         justify-content:space-around;
         align-items:center; */
+
+        flex: 1 1 50%; /* Allows two items per row */
+  box-sizing: border-box;
+  padding: 30px;
+  text-align: center;
+        
     }
     .t{
         height: 80%;
@@ -491,8 +521,10 @@
         width: 100%;
     }
     #foot{
+        background-color: purple;
         height: 100px;
     }
+    
 
 
     
@@ -592,17 +624,6 @@
             <br>
             <br>
             <div class="section1">
-                <img class="h" src="https://cdn3d.iconscout.com/3d/free/thumb/free-javascript-3d-icon-download-in-png-blend-fbx-gltf-file-formats--html-logo-vue-angular-coding-lang-pack-logos-icons-7577991.png?f=webp" alt="">
-                <br>
-                <br>
-                <br>
-                <p class="pa">Skill Rate :: 50%</p>
-                <p class="pa">Beginner</p>
-                
-            </div>
-            <br>
-            <br>
-            <div class="section1">
                 <img class="hh" src="https://pbs.twimg.com/profile_images/1730334391501488129/G0R0sjHH_400x400.jpg" alt="">
                 <br>
                 <br>
@@ -612,6 +633,18 @@
                 <p class="pa">Intermediate</p>
                 
             </div>
+            <br>
+
+            <div class="section1">
+                <img class="h" src="https://cdn3d.iconscout.com/3d/free/thumb/free-javascript-3d-icon-download-in-png-blend-fbx-gltf-file-formats--html-logo-vue-angular-coding-lang-pack-logos-icons-7577991.png?f=webp" alt="">
+                <br>
+                <br>
+                <br>
+                <p class="pa">Skill Rate :: 50%</p>
+                <p class="pa">Beginner</p>
+                
+            </div>
+            <br>
             <br>
             
             <div class="section1">
@@ -639,7 +672,6 @@
 
         <hr>
         <h1 class="about"id="mm">My Profiles</h1>
-        <br>
         <br>
         <br>
         <section class="avisection">
@@ -674,6 +706,15 @@
                 
                 
             </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
             <br>
             <br>
             <br>
