@@ -77,27 +77,45 @@
         }
 
         .firstsection{
+            height: 70vh;
+            width: 100%;
+    
             display: flex;
             justify-content: space-around;
             align-items: center;
-            margin: 130px 0px;
+            margin: 100px 0px;
 
         }
 
-        .firstsection > div{
-            width: 35%;
-        }
+        
 
         .leftsection{
-            /* background-color: black; */
+            height: 80%;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             font-size: 2.5rem;
             margin: 25px 0px;
+            margin-top: -10px;
 
+        }
+        .rightsection{
+            
+
+            height: 80%;
+            width: 50%;
+       
+            display:flex ;
+            justify-content: center;
+            align-items: center;
         }
         .rightsection img{
             filter: drop-shadow(2px 2px 30px blueviolet);
-            border-radius: 10rem;
-            width: 90%;
+            height: 100%;
+            width: 70%;
+            
+            
             
         }
 
@@ -113,7 +131,7 @@
         .about{
             font-size: 3rem;
             margin:0px 90px;
-            color: purple;
+            color: rgb(179, 213, 243);
         }
 
 
@@ -270,7 +288,7 @@
         }
         #foot{
             width: 100%;
-            height: 150px;
+            height: 120px;
             background-color: rgb(4, 4, 41);
         }
 
@@ -326,8 +344,16 @@
         /* background-color: #9c97f1; */
         border-radius: 2rem;
         border:none;
+        
         box-shadow: 0 0 1rem rgba(0,0,0,0.8);
         transition: transform 0.3s ease-in-out
+        
+    }
+    .in{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 
     .section11:hover{
@@ -363,6 +389,9 @@
     }
     .ax{
         filter: drop-shadow(2px 2px 20px blueviolet);
+    }
+    .lastsection{
+        height: 40vh;
     }
 
 
@@ -428,23 +457,38 @@
     }
 
     .about{
-        color: rgb(158, 7, 158);
+        color: rgb(155, 201, 241);
     }
 
     .firstsection{
-        
-        margin: 85px 0px;
+   
+        margin: 60px 0px;
         width: 100%;
-        height: 400px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
     }
     .leftsection{
-        font-size: 2.0rem;
+        margin-top: -40px;
+        height: 50%;
+        width: 100%;
+        text-align: center;
+        font-size: 2.2rem;
+    }
+    .rightsection{
+        
+        margin-top: -40px;
+        height: 50%;
+        width: 100%;
     }
     .rightsection img{
-        height: 290px;
-        width: 200px;
-        margin-right: 200px;
+       margin-left: 30px;
+        height: 100%;
+        width: 90%;
+        
     }
 
 
@@ -516,7 +560,7 @@
         justify-content:center;
         
         
-        margin: 20px 0px;
+        margin-top: -40px;
         /* height: 400px; */
     }
     .section2{
@@ -557,6 +601,7 @@
     }
 
     .lastsection{
+        height: 35vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -606,12 +651,19 @@
         max-width: 100%;
         border-radius: 1rem;
     }
+    .in{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .section111{
         height: 150px;
     }
     .na{
-        height: 65px;
-        width: 65px;
+        height: 70px;
+        width: 70px;
     }
 
 
@@ -676,10 +728,12 @@
     <main>
         <section class="firstsection">
             <div class="leftsection">
-                Hi ,I'm <span class="purple">Abinash</span> 
-                <div>And I'm a passionate</div>
-                <!-- <span class="purple">Web Developer</span></div> -->
-                <span id="element" class="purple"></span>
+                <div>
+                    Hi ,I'm <span class="purple">Abinash</span> 
+                    <div>And I'm a passionate</div>
+                    <!-- <span class="purple">Web Developer</span></div> -->
+                    <span id="element" class="purple"></span>
+                </div>
             </div>
             <div class="rightsection">
                 <img src="https://cdni.iconscout.com/illustration/premium/thumb/full-stack-developer-illustration-download-in-svg-png-gif-file-formats--binary-coding-design-digital-modern-technology-pack-development-illustrations-1651585.png?f=webp" alt="">
@@ -723,12 +777,16 @@
             <h1 class="fee">Frontend</h1>
             <div class="section11">
                 <h1 class="fe">Frontend</h1>
-                <div class="section111">
-                    <img class="na" src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_640.png" alt="">
-                    <img class="na" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="">
-                    <img class="na" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfTvKkYl6oBVPdL1xXw4ohTPuLVLh7F7EZhA&s" alt="">
-                    <img class="na" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWUxm-2Z1WOV-BAwf3gSUCEZV6x1HQSIUl2w&s" alt="">
-                    <img class="na" src="https://pbs.twimg.com/profile_images/1730334391501488129/G0R0sjHH_400x400.jpg" alt="">
+                <div class="in">
+                    <div class="section111">
+                        <img class="na" src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_640.png" alt="">
+                        <img class="na" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="">
+                        <img class="na" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfTvKkYl6oBVPdL1xXw4ohTPuLVLh7F7EZhA&s" alt="">
+                    </div>
+                    <div class="section111">
+                        <img class="na" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWUxm-2Z1WOV-BAwf3gSUCEZV6x1HQSIUl2w&s" alt="">
+                        <img class="na" src="https://pbs.twimg.com/profile_images/1730334391501488129/G0R0sjHH_400x400.jpg" alt="">
+                    </div>
                 </div>
                 
             </div>
@@ -863,7 +921,7 @@
         <br>
         <section class="thirdsection">
             <div class="section1">
-                <img class="h" src="https://media.licdn.com/dms/image/v2/D4D03AQEt-3aK_WJqiA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1725966565749?e=1733961600&v=beta&t=KrbHSOP22fvnnlNkC0HNVzCl6s9bfIlopos4k3TOV3Q" alt="">
+                <img class="h" src="https://media.licdn.com/dms/image/v2/D4D03AQEt-3aK_WJqiA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725966565774?e=1740009600&v=beta&t=j9_FxR9I5ft2H8A7I131KeTBpuJPRKOBEQWo547hvy4" alt="">
                 <br>
                 <br>
                 <br>
@@ -881,7 +939,7 @@
             <br>
             <br>
             <div class="section1">
-                <img class="h" src="https://media.licdn.com/dms/image/v2/D5603AQEXfNL2Og0aCA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1722630148397?e=1733961600&v=beta&t=np18tgm33h0V0Pj1YHLW2YqtcSUbRfu3dk4HiY0zMRY" alt="">
+                <img class="h" src="https://media.licdn.com/dms/image/v2/D5603AQEXfNL2Og0aCA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1722630148416?e=1740009600&v=beta&t=2H5w8IYZ8_VJIT7xKsjtAJAHwzV_lStnB_Y6_voLJ7Q" alt="">
                 <br>
                 <br>
                 <br>
@@ -911,7 +969,7 @@
             <br>
             <br>
             <div class="section1">
-                <img class="h" src="https://media.licdn.com/dms/image/v2/D5603AQEzupINgdQqvA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724742659161?e=1733961600&v=beta&t=3jzxov5411ESqnxYuUvaggatCUoOL5tN8g2h2hnJ8OI" alt="">
+                <img class="h" src="https://media.licdn.com/dms/image/v2/D5603AQEzupINgdQqvA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1724742659193?e=1740009600&v=beta&t=vcLP0xOlzCrJmZbeTStz0L_AFB5vp9Hf_e-hfl_-miA" alt="">
                 <br>
                 <br>
                 <br>
