@@ -288,7 +288,7 @@
         }
         #foot{
             width: 100%;
-            height: 120px;
+            height: 80px;
             background-color: rgb(4, 4, 41);
         }
 
@@ -302,7 +302,7 @@
         }
 
 
-        .six{
+    .six{
         height: 100%;
         width: 100%;
         display: flex;
@@ -310,8 +310,8 @@
         align-items: center;
     }
     .ii{
-        height: 80px;
-        width: 80px;
+        height: 60px;
+        width: 60px;
     }
     .ff{
         height: 100%;
@@ -500,7 +500,7 @@
     }
 
     .about{
-        font-size: 2rem;
+        font-size: 2.2rem;
         text-align: center;
     }
     .leftsection2 img{
@@ -773,8 +773,10 @@
         <h1 class="about" id="sk">Skills</h1>
         <br>
         <br>
-        <section class="thirdsection">
+        <section class="thirdsection" id="sku">
             <h1 class="fee">Frontend</h1>
+            <br>
+            <br>
             <div class="section11">
                 <h1 class="fe">Frontend</h1>
                 <div class="in">
@@ -816,10 +818,10 @@
        
 
         <hr>
-        <h1 class="about"id="mm">My Profiles</h1>
+        <h1 class="about" id="mm">My Profiles</h1>
         <br>
         <br>
-        <section class="avisection">
+        <section class="avisection" id="avu">
             <div class="section2">
                 <div class="ax"><a href="https://leetcode.com/u/abinashmishra1401/"><img class="t" src="https://img.icons8.com/?size=160&id=fiCYSJOnXi7E&format=png" alt=""></a>
                 
@@ -915,11 +917,11 @@
 
 
         <hr>
-        <h1 class="about"id="my">My Squad</h1>
+        <h1 class="about" id="my">My Squad</h1>
         <br>
         <br>
         <br>
-        <section class="thirdsection">
+        <section class="thirdsection" id="they">
             <div class="section1">
                 <img class="h" src="https://media.licdn.com/dms/image/v2/D4D03AQEt-3aK_WJqiA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725966565774?e=1740009600&v=beta&t=j9_FxR9I5ft2H8A7I131KeTBpuJPRKOBEQWo547hvy4" alt="">
                 <br>
@@ -1003,7 +1005,10 @@
        
 
         <hr>
-        <h1 class="about"id="cn">Connect With Me</h1>
+
+        <br>
+        <br>
+        <h1 class="about" id="cn">Connect With Me</h1>
         <br>
         <br>
         <br>
@@ -1021,7 +1026,7 @@
 
     </main>
     <footer id="foot">
-        <div class="six">
+        <div class="six" id="last">
             <div class="ii"><a href="https://www.linkedin.com/in/abinash-mishra-880a5b291/"><img class = "ff" src="https://image.similarpng.com/very-thumbnail/2020/07/Linkedin-logo-on-transparent-Background-PNG-.png" alt=""></a></div>
             <div class="ii"><a href="https://github.com/Abi04nash"><img class = "ff" src="https://www.shutterstock.com/image-vector/gomel-belarus-july-26-2023-260nw-2337859337.jpg" alt=""></a></div>
             <div class="ii"><a href="index2.html"><img class = "ff" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png" alt=""></a></div>
@@ -1031,6 +1036,8 @@
 
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
       
 
@@ -1042,6 +1049,108 @@
       typeSpeed: 100,
         
     });
+
+
+
+    gsap.from('.rightsection',{
+        y:50,
+        duration:1,
+        opacity:0,
+        delay : 1,
+        stagger:1,
+    })
+
+
+
+    gsap.from('.para',{
+        y:50,
+        duration:1,
+        opacity:0,
+        delay : 0,
+        stagger:1,
+        scrollTrigger : '#ab .para',
+    })
+
+    gsap.from('.leftsection2',{
+        y:50,
+        duration:1,
+        opacity:0,
+        delay : 1,
+        stagger:1,
+        scrollTrigger : '#ab .leftsection2',
+    })
+
+    gsap.from('.section111',{
+        y:50,
+        duration:1,
+        opacity:0,
+        delay : 0,
+        stagger:1,
+        scrollTrigger : '#sku .section111',
+    })
+
+    gsap.from('.fe',{
+        y:50,
+        duration:1,
+        opacity:0,
+        delay : 1,
+        stagger:1,
+        scrollTrigger : '#sku .fe',
+    })
+
+    gsap.from('.fee',{
+        y:50,
+        duration:1,
+        opacity:0,
+        delay : 1,
+        stagger:1,
+        scrollTrigger : '#sku .fee',
+    })
+
+    gsap.from('.ax',{
+        y:50,
+        duration:1,
+        opacity:0,
+        delay : 0,
+        stagger:1,
+        scrollTrigger : '#avu .ax',
+    })
+
+    gsap.from('.h',{
+        y:50,
+        scale:0,
+        duration:1,
+        opacity:0,
+        delay : 0,
+        stagger:1,
+        
+        scrollTrigger : '#they .h',
+    })
+
+    gsap.from('#cn',{
+        y:50,
+        scale:0,
+        duration:1,
+        opacity:0,
+        delay : 1,
+        stagger:1,
+        
+        scrollTrigger : '#last #cn',
+    })
+
+    gsap.from('.ii',{
+        y:50,
+        scale:0,
+        duration:1,
+        opacity:0,
+        delay : 0,
+        stagger:1,
+        
+        scrollTrigger : '#last .ii',
+    })
+   
+
+    
   </script>
 
 
