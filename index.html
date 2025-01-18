@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -29,6 +30,10 @@
             text-align: center;
             overflow: hidden
         }
+        .main{
+            min-height: 100vh;
+            width: 100vw;
+        }
 
         nav{
             display: flex;
@@ -38,6 +43,8 @@
             width: 100%;
            
             background-color: rgb(11, 11, 54);
+    box-shadow: 0 0 1rem rgb(108, 107, 107);
+
             position: fixed;
             z-index: 100;
         }
@@ -56,12 +63,16 @@
         nav ul li a{
             list-style: none;
             color: rgb(155, 155, 241);
+            transition: 600ms;
+            
             
             
         }
         nav ul li a:hover{
             list-style: none;
-            color: whitesmoke;
+            color:cyan;
+            
+            
             
         }
 
@@ -84,7 +95,7 @@
         }
 
         .firstsection{
-            height: 70vh;
+            min-height: 80vh;
             width: 100%;
     
             display: flex;
@@ -110,6 +121,7 @@
             font-weight:600;
 
         }
+        
 
         
 
@@ -150,19 +162,35 @@
 
 
         .secondsection{
+            min-height: 80vh;
+            width: 100%;
             display: flex;
             justify-content: space-around;
             align-items: center;
             margin: 30px 0px;
         }
 
-        .secondsection > div{
-            width: 35%;
+        
+
+        .leftsection2{
+            
+            height: 50vh;
+            width: 40vw;
         }
         .leftsection2 img{
+            height: 100%;
             width: 70%;
         filter: drop-shadow(2px 2px 30px blueviolet);
 
+        }
+
+        .rightsection2{
+            
+            height: 55vh;
+            width: 40vw;
+            padding: 20px;
+            overflow: hidden;
+            
         }
         .para{
             font-size: 1.2rem;
@@ -171,13 +199,19 @@
         }
 
         .thirdsection{
+            
+            min-height: 70vh;
             display: flex;
+            flex-wrap: wrap;
+            gap: 10vh;
             justify-content: space-around;
             align-items: center;
-            margin: 30px 0px;
+            margin: 10px 0px;
+            
             
         }
         .avisection{
+            min-height: 70vh;
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -311,6 +345,8 @@
             width: 100%;
             height: 80px;
             background-color: rgb(11, 11, 54);
+    box-shadow: 0 0 1rem rgb(108, 107, 107);
+
         }
 
         html {
@@ -324,16 +360,32 @@
 
 
     .six{
-        display: none;
+        height: 100%;
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px;
+        
+    }
+
+    .six .writ{
+        font-size: 20px;
+    }
+    .links{
+        width: 30%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
     .ii{
-        height: 60px;
-        width: 60px;
+        height: 30px;
+        width: 30px;
     }
     .ff{
         height: 100%;
         width: 100%;
-        border-radius: 1rem;
+        border-radius: 5px;
         transition: transform 0.3s ease-in-out;
         filter: drop-shadow(2px 2px 20px blueviolet);
     }
@@ -358,11 +410,11 @@
     }
     .section11{
         
-        height: 250px;
-        width: 500px;
+        height: 280px;
+        width: 400px;
         text-align: center;
         /* background-color: #9c97f1; */
-        border-radius: 2rem;
+        border-radius: 15px;
         border:none;
         display: flex;
         flex-direction: column;
@@ -370,7 +422,8 @@
         align-items: center;
         
         box-shadow: 0 0 1rem rgba(0,0,0,0.8);
-        transition: transform 0.3s ease-in-out
+        box-shadow: 0 0 1rem rgb(108, 107, 107);
+        transition: transform 0.3s ease-in-out;
         
     }
     .in{
@@ -443,7 +496,7 @@
         
         height: 70vh;
         width: 25%;
-        border-radius: 2rem;
+        border-radius: 1rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -491,10 +544,10 @@
     .link{
         width: 100%;
         height: 50px;
-        background-color:rgb(252, 227, 231);
+        background-color:rgb(30, 20, 73);
         overflow: hidden;
         text-align: center;
-        padding-left: 20px;
+        padding: 10px;
 
         border-radius: 8px;
         transition: height 0.3s ease;
@@ -507,8 +560,8 @@
 
     .write{
         font-size: 16px;
-        text-align: left;
-        color:blueviolet;
+        text-align: center;
+        color:whitesmoke;
         font-family:'Times New Roman', Times, serif;
     }
 
@@ -574,7 +627,7 @@
     padding-left:25px;
     font-weight: 500;
     color: #666;
-    border-radius:20px ;
+    border-radius:14px ;
 }
 .contact-left textarea{
     height: 140px;
@@ -610,6 +663,73 @@
 
  }
 
+ .edu{
+    min-height: 250px;
+    width: 500px;
+    text-align: center;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.8);
+    box-shadow: 0 0 1rem rgb(108, 107, 107);
+    transition: transform 0.3s ease-in-out;
+
+ }
+
+ .edu:hover{
+    transform:
+    scale(1.05);
+}
+ .edu .writ{
+    text-align: center;
+    padding-right: 15px;
+ }
+
+ .study{
+    height: 120px;
+    width: 120px;
+    border-radius: 200px;
+    
+    filter: drop-shadow(2px 2px 10px blueviolet);
+
+ }
+ .study img{
+    height: 120px;
+    width: 120px;
+    border-radius: 200px;
+    
+ }
+
+ .resume{
+    height: 40px;
+    width: 130px;
+    background-color: #9c97f1;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bolder;
+    border: #666;
+    border-style: dotted;
+    color: aliceblue;
+    position: relative;
+    cursor: pointer;
+  
+ }
+
+ a{
+    color: aliceblue;
+    font-style: none;
+ }
+
+ 
+
+ 
+
 
 
 
@@ -626,11 +746,29 @@
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     /* Add your styles for mobile devices here */
     /* body {
       background-color: burlywood;
     } */
+
+
+    .edu{
+        width: 90%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+    .edu .para{
+        text-align: center;
+    }
+    
+
+
 
     .contact-inputs{
         width: 80vw;
@@ -728,12 +866,12 @@
         
         margin-top: -40px;
         height: 50%;
-        width: 100%;
+        width: 80%;
     }
     .rightsection img{
        margin-left: 30px;
         height: 100%;
-        width: 90%;
+        width: 100%;
         
     }
 
@@ -866,13 +1004,19 @@
     .six{
         height: 100%;
         width: 100%;
+        text-align: center;
         display: flex;
+        flex-direction: column;
         justify-content:space-evenly;
         align-items: center;
+        padding: 0%;
+    }
+    .links{
+        width: 70%;
     }
     .ii{
-        height: 50px;
-        width: 50px;
+        height: 30px;
+        width: 30px;
     }
     .ff{
         height: 100%;
@@ -930,21 +1074,34 @@
         align-items: center;
         margin: 30px 0px;
     }
-    .leftsection2 img{
-        height: 180px;
+    .leftsection2{
+        height: 30vh;
+        width: 50vw;
+        
         
     }
+
+    .leftsection2 img{
+        height: 100%;
+        width: 100%;
+        
+    }
+
     .rightsection2{
-        height: 500px;
-        width: 400px;
+        
+        height: 60vh;
+        width: 80vw;
         display: flex;
-        padding-left: 15px;
+        padding: 10px;
         flex-direction: column;
         align-items: center;
     }
     .para{
-        font-size: 18px;
-        width: 300px;
+        
+        font-size: 17px;
+        padding: 10px;
+        height: 100%;
+        width: 100%;
     }
 
 
@@ -1008,6 +1165,14 @@
        left:0;
     }
 
+    
+
+    .resume{
+        display: block; /* Allow centering by making it block */
+        margin: 10px auto; /* Center horizontally */
+        text-align: center;
+    }
+
 
     
 
@@ -1041,10 +1206,10 @@
                 <ul id="nav-links">
                     <li><a href="#first">Home</a></li>
                     <li><a href="#ab">About</a></li>
+                    <li><a href="#my">Education</a></li>
                     <li><a href="#sk">Skills</a></li>
                     <li><a href="#mm">Profiles</a></li>
                     <li><a href="#project">Projects</a></li>
-                    <li><a href="#my">Squad</a></li>
                     <li><a href="#cn">Connect</a></li>
                 </ul>
             </div>
@@ -1060,12 +1225,15 @@
     <main>
         <section class="firstsection" id="first">
             <div class="leftsection">
-                <div>
+                <div class="for">
                     Hi ,I'm <span class="purple">Abinash</span> 
                     <div>And I'm a passionate</div>
                     <!-- <span class="purple">Web Developer</span></div> -->
                     <span id="element" class="purple"></span>
+                    <br>
+                    <div class="resume"><a href="https://drive.google.com/file/d/1isxPRaKfDPH9ji6mzzEtd6UUWN0w-bmD/view?usp=sharing">Resume</a></div>
                 </div>
+                
 
                 
 
@@ -1082,22 +1250,19 @@
         <hr>
         <h1 class="about" id="ab">About Me</h1>
         <br>
-        <br>
+        
         <section class="secondsection">
             <div class="leftsection2">
-                <img src="https://cdn-icons-png.flaticon.com/512/5072/5072860.png" alt="">
-                <br>
-                <br>
+                <img src="https://png.pngtree.com/png-vector/20240131/ourmid/pngtree-businessman-with-portfolio-worker-character-png-image_11578891.png" alt="">
                
             </div>
+
             <div class="rightsection2">
                 <div class="para">Hello! , I am Abinash Mishra, a passionate web developer and programmer currently pursuing my Bachelor's degree in Information Technology at IIIT Bhubaneswar.</div>
                 <br>
-                 <div class="para">I have immersed myself in the world of technology , developing a robust understanding of various IT concepts and practices.</div>
-                 <br>
-                <div class="para">I'm a Leetcode Enthusiast and I like to solve problems and create innovative solutions.</div>
-                <br>
                 <div class="para">I have a strong interest in web development and actively engage in building and maintaining web applications.</div>
+                <br>
+                <div class="para">I'm a Leetcode Enthusiast and I like to solve problems and create innovative solutions.</div>
             </div>
             
         </section>
@@ -1107,7 +1272,50 @@
         <br>
 
         <hr>
-        <h1 class="about" id="sk">What  I'm  Doing </h1>
+        <h1 class="about" id="my">Education</h1>
+        <br>
+        <br>
+        <br>
+        <section class="thirdsection" id="they">
+           
+            <div class="edu">
+                <br>
+                <div class="study">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/IIIT_Bhubaneswar_1.jpg" alt="">
+                </div>
+                <br>
+                <div class="para">IIIT Bhubaneswar</div>
+              
+                <div class="writ">Currently pursuing a Bachelor’s degree in Information Technology, 2nd year, at IIIT Bhubaneswar. </div>
+                
+            </div>
+            <div class="edu">
+                <br>
+                <div class="study">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSjXU1khkOck1GbfbGffsFWO1dhfF0pJ5DKg&s" alt="">
+                </div>
+                <br>
+                <div class="para">K V NO.1 , BBSR</div>
+                
+                <div class="writ">I completed my class 10th and 12th from K V NO.1, Bbsr</div>
+                <div class="writ">Class 12th : 87% || Class 10th : 91%</div>
+                
+
+
+            </div>
+            
+        </section>
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+       
+
+        <hr>
+        <h1 class="about" id="sk">What I'm Doing </h1>
         <br>
         <br>
         <section class="thirdsection" id="sku">
@@ -1128,9 +1336,7 @@
                 </div>
                 
             </div>
-            <br>
-            <br>
-            <br>
+            
             
             <div class="section11">
                 <h1 class="fe">Programming</h1>
@@ -1140,6 +1346,21 @@
                         <img class="na" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf5HTFZkv2mzNP2uDqQgQ6oLkQjpg2pwrBmw&s" alt="">
                         <img class="na" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYDNSLG5QPp8yWUwq3Nro1kGnwCTySRzZViA&s" alt="">
                         <img class="na" src="https://www.kindpng.com/picc/m/31-312643_javascript-icon-programing-language-javascript-logo-png-transparent.png" alt="">
+                    </div>
+                </div>
+                
+            </div>
+            
+            
+            <div class="section11">
+                <h1 class="fe">Tech Tools</h1>
+                <div class="writ"> Proficient in using modern tools that streamline development and collaboration, including VS Code for coding, Git for version control, GitHub for repository management, and Figma for UI/UX design prototyping. </div>
+                <div class="in">
+                    <div class="section111">
+                        <img class="na" src="https://w7.pngwing.com/pngs/210/953/png-transparent-microsoft-visual-studio-code-alt-macos-bigsur-icon-thumbnail.png" alt="">
+                        <img class="na" src="https://w7.pngwing.com/pngs/155/858/png-transparent-git-icon-hd-logo.png" alt="">
+                        <img class="na" src="https://cdn.worldvectorlogo.com/logos/github-icon-2.svg" alt="">
+                        <img class="na" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-KLTjAdBCoCYUv5tirVg_QIQpsZHTScZYnA&s" alt="">
                     </div>
                 </div>
                 
@@ -1329,86 +1550,8 @@
 
 
 
-        <hr>
-        <h1 class="about" id="my">My Squad</h1>
-        <br>
-        <br>
-        <br>
-        <section class="thirdsection" id="they">
-            <div class="section1">
-                <img class="h" src="https://media.licdn.com/dms/image/v2/D4D03AQEt-3aK_WJqiA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725966565774?e=1740009600&v=beta&t=j9_FxR9I5ft2H8A7I131KeTBpuJPRKOBEQWo547hvy4" alt="">
-                <br>
-                <br>
-                <br>
-                <div><p class="p"><span class="x"><a class="four" href="https://www.linkedin.com/in/jagneswar-panda-5b6151283/">JAGNESWAR</a></span></p>
-                    <br>
-                    <p class="p">ML Enthusiast</p>
-                    <p class="p">Competative programmer</p>
-                
-            </div>
-                <!-- <p class="p"><span class="x">JAGNESWAR</span></p>
-                <br>
-                <p class="p">ML Enthusiast</p>
-                <p class="p">Competative programmer</p> -->
-            </div>
-            <br>
-            <br>
-            <div class="section1">
-                <img class="h" src="https://media.licdn.com/dms/image/v2/D5603AQEXfNL2Og0aCA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1722630148416?e=1740009600&v=beta&t=2H5w8IYZ8_VJIT7xKsjtAJAHwzV_lStnB_Y6_voLJ7Q" alt="">
-                <br>
-                <br>
-                <br>
-                <div><p class="p"><span class="x"><a class="four" href="https://www.linkedin.com/in/aman-kumar-ray-11b021294/">AMAN</a></span></p>
-                    <br>
-                    
-                    <p class="p">Web developer</p>
-                    <p class="p">LeetCode Enthusiast</p>
-                    <p class="p">Competative Programmer</p>
-                </div>
-                
-            </div>
-            <br>
-            <br>
-            <div class="section1">
-                <img class="h" src="subro.png" alt="">
-                <br>
-                <br>
-                <br>
-                <div><p class="p"><span class="x"><a class="four" href="https://www.linkedin.com/in/subhro-mitra-983167336/">SUBRO</a></span></p>
-                    <br>
-                    <p class="p">Web developer</p>
-                    <p class="p">Competative Programmer</p>
-                </div>
-                
-            </div>
-            <br>
-            <br>
-            <div class="section1">
-                <img class="h" src="https://media.licdn.com/dms/image/v2/D5603AQEzupINgdQqvA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1724742659193?e=1740009600&v=beta&t=vcLP0xOlzCrJmZbeTStz0L_AFB5vp9Hf_e-hfl_-miA" alt="">
-                <br>
-                <br>
-                <br>
-                <div><p class="p"><span class="x"><a class="four" href="https://www.linkedin.com/in/biswabin-sarandeep-a60852292/">BISWABIN</a></span></p>
-                    <br>
-                   
-                    <p class="p">Programmer</p>
-                    <p class="p">Cyber security Enthusiast </p>
-                    <p class="p">Video Editor </p>
-                </div>
-                
-            </div>
-            
-        </section>
+        
 
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
 
 
 
@@ -1456,9 +1599,15 @@
     </main>
     <footer id="foot">
         <div class="six" id="last">
-            <div class="ii"><a href="https://www.linkedin.com/in/abinash-mishra-880a5b291/"><img class = "ff" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-suyH5XUGhAbRwMVg_mUyvJre2qtxGB6qPQ&s" alt=""></a></div>
-            <div class="ii"><a href="https://github.com/Abi04nash"><img class = "ff" src="https://www.shutterstock.com/image-vector/gomel-belarus-july-26-2023-260nw-2337859337.jpg" alt=""></a></div>
-            <div class="ii"><a href="index2.html"><img class = "ff" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png" alt=""></a></div>
+            <div >Made with <i class="fa-regular fa-heart"></i> by Avi</div>
+            <div class="links">
+                <div class="ii"><a href="https://www.linkedin.com/in/abinash-mishra-880a5b291/"><img class = "ff" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-suyH5XUGhAbRwMVg_mUyvJre2qtxGB6qPQ&s" alt=""></a></div>
+                <div class="ii"><a href="https://github.com/Abi04nash"><img class = "ff" src="https://www.shutterstock.com/image-vector/gomel-belarus-july-26-2023-260nw-2337859337.jpg" alt=""></a></div>
+                <div class="ii"><a href="https://leetcode.com/u/abinashmishra1401/"><img class = "ff" src="https://preview.redd.it/i-have-been-leetcoding-for-a-while-but-what-does-the-v0-ucy9q7w40wtc1.jpg?width=720&format=pjpg&auto=webp&s=41e11a55faf86e0b7bbbddf934b906212caa0fa9" alt=""></a></div>
+                <div class="ii"><a href="https://codolio.com/profile/AVI"><img class = "ff" src="https://lh3.googleusercontent.com/3FcqR2WkYt8ed7P2EF_g17CxIl7AYMU9unNVlWCjDFgC7FUZGBFaNB7G_j8L8nSos52VMt6sh5ATXACwP5irStfi=s128-rj-sc0x00ffffff" alt=""></a></div>
+                <div class="ii"><a href="https://www.codechef.com/users/abinash0404"><img class = "ff" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_N74G_dvD0sNMxJT0j9t9IhjVBMEU7uga7A&s" alt=""></a></div>
+                
+            </div>
         </div>
     </footer>
 
@@ -1500,6 +1649,16 @@ document.querySelectorAll('#nav-links li a').forEach(link => {
         opacity:0,
         delay : 1,
         stagger:1,
+    })
+
+    gsap.from('.edu',{
+        y:50,
+        duration:1,
+        opacity:0,
+        delay : 1,
+        stagger:1,
+        scrollTrigger : '#they .edu',
+
     })
 
 
